@@ -1,0 +1,114 @@
+# 1)sum of elements in tuple
+# input_tup=(10,20,30,12,45)
+# total=0
+# for ele in input_tup:
+#     total += ele
+# print("Sum of elements in the tuple:",total)
+
+# 2)reverse a tuple
+# input_tup=(10,20,30,12,45)
+# length=len(input_tup)
+# for ele in range(-1,-length-1,-1):
+#     print(input_tup[ele])
+
+
+# 3)print duplicate element in tuple
+input_tup=(10,20,'java',12,20,'python',30,10)
+unique = []
+for ele in input_tup:
+    if ele not in unique:
+        unique.append(ele)
+    else:
+        print(ele)
+
+
+tu = (24, 10, 100, 105, 10, 100, 105)
+new_tu = ()
+
+for ele in tu:
+    if ele not in new_tu:
+        new_tu += (ele,)
+
+print(new_tu)
+
+# 4) num devisible by both 3 and 5 print that number
+tu=(5,14,15,18,21,25)
+for i in tu:
+    if i%3==0 and i%5==0:
+        print("Number divisible by both 3 and 5 ",i)
+
+# 5)Highest and lowerst number in tuple
+tu = (5,14,15,113,12,58,99)
+highest=tu[0]
+lowest=tu[0]
+length=len(tu)
+for ele in range(0,length,1):
+    if tu[ele] > highest :
+        highest=tu[ele]
+for ele in range(0,length,1):
+    if tu[ele] < lowest :
+        lowest=tu[ele]
+print("Highest Number in the given tuple :",highest)
+print("Lowest Number in the given tuple :",lowest)
+
+
+
+tu = (5,14,15,113,12,58,99)
+highest=tu[0]
+lowest=tu[0]
+length=len(tu)
+for ele in range(0,length,1):
+    if tu[ele] > highest :
+        highest=tu[ele]
+    if tu[ele] < lowest:
+        lowest = tu[ele]
+print("Highest Number in the given tuple :",highest)
+print("Lowest Number in the given tuple :",lowest)
+
+# 6)print even indexed elements in the tuple
+tu = (5,14,15,113,12,58,99)
+# for var in range(0,len(tu),2):
+#     print(tu[var])
+
+#print element with the index
+for ele in tu:
+    print(ele,"----",tu.index(ele))
+
+
+
+
+# 7)tuple1 = (50, 10, 60, 70, 50) find number of occurence of 50
+tuple1 = (50, 10, 60, 70, 50,50)
+# print("Number of occurence of 50 is",tuple1.count(50))
+#
+#
+count = 0
+for ele in tuple1:
+    if ele == 50:
+        count += 1
+print("no 50 ",count,"times reapeated")
+
+
+# 8)print if the element is starting with vowel
+# files = ("Amazon", "flipkart", "walmart", "gmail", "yahoo")
+files = ("Amazon", "flipkart", "walmart", "gmail", "yahoo")
+vowel=('a','e','i','o','u','A','E','I','O','U')
+for file in files:
+    if file[0] in vowel:
+        print(file)
+
+
+# 9)tu = ("python", "dad", "hai", "malayalam", "madam", "mom") print polindrome in tuple
+tu = ("python", "dad", "hai", "malayalam", "madam", "mom")
+for ele in tu:
+    if ele == ele[::-1]:
+        print(ele)
+
+# 10)Check if all items in the tuple are the same
+# tu = (33,33,33,33)
+# tu = (33,33,33,33)
+# if tu.count(tu[0]) == len(tu):
+#     print("Tuple contains same element")
+# else:
+#     print("Tuple contains different elements")
+

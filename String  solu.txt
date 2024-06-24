@@ -1,0 +1,136 @@
+1)Check the given string is symmeterical or not
+# string=input("Enter a string ")
+# half_string=int(len(string)//2)
+# f_str=string[:half_string]
+# s_str=string[half_string:]
+# if f_str==s_str:
+#     print(string,"Symmetric")
+# else:
+#     print(string,"Not symmetric")
+#
+#
+# st = input("enteer the string :")
+2)Uppercase Half String
+input = 'python' 
+output = 'pytHON'
+input = 'check'  output =chECK
+
+# string = "python programming"
+# length = len(string)
+# midpoint = length // 2
+# result = ''
+# for i in range(length):
+#     if i >= midpoint:
+#         result += string[i].upper()
+#     else:
+#         result += string[i].lower()
+#
+# print(result)
+
+
+3)create a new string by Removing 3rd and 5th index string 
+# input_str=input("Enter the string: ")
+# length=len(input_str)
+# final_str=''
+# for i in range(0,length,1):
+#     if (i==3 or i==5):
+#         continue
+#     else:
+#         final_str=final_str+input_str[i]
+# print("Final String:",final_str)
+
+ 
+4)write a program to display maximum time repeated character in a string
+st = 'hello world'
+max = 0
+for i in st:
+    if max < st.count(i):
+        max = st.count(i)
+print(max)
+
+for char in st:
+    if max == st.count(char):
+        print(max,"maximum time repeted characte",char)
+        break
+
+5)Python program to capitalize the first and last character of each word in a string
+st = "Hello world"
+li = st.split()
+print(li)
+
+for i in li:
+    print(i[0].lower()+i[1:len(i)-1]+i[(len(i)-1)].upper())
+
+6)Python program to check if a string has atleast one alphabet and number
+# st = input("Enter the string: ")
+# has_alpha = False
+# has_num = False
+#
+# for char in st:
+#     if char.isalpha():
+#         has_alpha = True
+#     elif char.isdigit():
+#         has_num = True
+#
+# if has_alpha and has_num:
+#     print("The string contains both alphabets and numbers.")
+# elif has_alpha:
+#     print("The string contains only alphabets.")
+# elif has_num:
+#     print("The string contains only numbers.")
+# else:
+#     print("The string does not contain any alphabets or numbers.")
+#
+#
+# st="python123"
+# if st.isalnum():
+#     print("yes")
+# else:
+#     print("no")
+7)Python | Count the Number of matching characters in a pair of string
+str1 = 'aabcddekll12@' I/P
+str2 = 'bb22ll@55k'    I/P
+output =
+b 2
+k 1
+l 2
+l 2
+2 2
+@ 1
+str1 = 'aabcddekll12@'
+str2 = 'bb22ll@55k'
+for char in str1:
+    if char in str2:
+        print(char,str2.count(char))
+
+
+8)Find words which are greater than given length k
+sentence = 'Hi hello welcome to python programming launguage and it is very easy to learn"
+sentence = "Hi hello welcome to python programming launguage and it is very easy to learn"
+k = 5
+li = sentence.split()
+for ele in li:
+    if len(ele) > k:
+        print(ele)
+
+
+9)write a program to display char before user input
+ex: if you take 'D' as input
+o/p : ABC
+ex: if you take 'e' as input
+o/p : abcd
+other than alphabet display charater not belong to alphabet
+
+
+st = 'e'
+end = ord(st)
+if 65<=end<=90:
+    for i in range(65, 90):
+        if i == end:
+            break
+        print(chr(i))
+elif 97<=end<=122:
+    for i in range(97,122):
+        if i == end:
+            break
+        print(chr(i))

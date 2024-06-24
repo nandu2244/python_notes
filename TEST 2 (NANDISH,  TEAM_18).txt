@@ -1,0 +1,140 @@
+===================================TEST 2==================================================================================
+
+# 1)A student will not be allowed to sit in exam if his/her attendance is less than 75%.
+# Take following input from user Number of classes held, Number of classes attended. 
+# And printpercentage of class attended. Is student is allowed to sit in exam or not.
+
+# no_of_classes_attended=int(input('enter value: '))
+# attenedence=75
+# no_of_classes_held=100
+# per_of_class_attended=no_of_classes_attended/100
+
+# if no_of_classes_attended>=attenedence:
+#     print('eligible to sit in exam', per_of_class_attended)
+# else:
+#     print('not eligible to sit in exam', per_of_class_attended)    
+
+# # 2)find the greatest of 3 numbers
+# li=[]
+# for i in range(0,4):
+#     li.append(i)
+# print(li, 'max no is :', max(li))    
+
+
+# 3)Write a program that calculates the salary of an employee based on their position and years of experience.
+# a) Manager yoe>5 then 50000 salary else 40000b)Engineer yoe>4 then 40000 salary else 30000
+
+# yoe=5
+# designation1='manager'
+# designation2='engineer'
+# man_sal=50000
+# eng_sal=40000
+# sal=30000
+
+# if yoe >= 5 and designation1=='manager':
+#     print('salary of manager is: ', man_sal)
+# elif yoe==4 and designation2=='engineer':
+#     print('engineer sal is :', eng_sal)
+# else:
+#     print(sal)        
+
+# 4)input 5 subjects marks find total, average marks, if marks greater than 35 pass 
+# less than 35 fail count how many subjects are passes and how many are failed
+
+# sub1=36
+# sub2=50
+# sub3=60
+# sub4=25
+# sub5=40
+# pass_marks=35
+# total_marks=sub1+sub2+sub3+sub4+sub5
+# print(total_marks)
+# avg=sub1+sub2+sub3+sub4+sub5/5
+# print(avg)
+
+# if sub1> pass_marks:
+#     print('student got pass marks in sub_1')
+#     if sub2>=pass_marks:
+#         print('student got pass_marks in sub_2')
+#         if sub3>pass_marks:
+#             print('student got pass marks in sub_3')
+#             if sub4>pass_marks:
+#                 print('student got pass marks in sub_4')
+#                 if sub5>pass_marks:
+#                     print('student got pass marks in sub_5')
+#                 else:
+#                     print('student failed in sub_5')
+#             else:
+#                 print('student failed in sub_4')
+#         else:
+#             print('student failed in sub_3')
+#     else:
+#         print('student failes in sub_2')
+# else:
+#     print('student failed in sub_1')                                    
+
+# 5)Write a program to display all the character except t and ost = 'Python'
+
+# st='python'
+# li=list(st)
+# new_li=[]
+# for ele in li:
+#     if ele=='t' or ele=='o':
+#         print(li.remove(ele))
+
+#         new_li.append(ele)
+# print(new_li)
+# print(li)
+
+
+# 10)reverese the values in dictionary if type of value is string,if integer add 10,if float keep as it is
+# dict={
+#     1:'python',
+#     2:'java',
+#     3:'sql',
+#     4:22,
+#     5:2.55
+# }
+# d={}
+# for key,value in dict.items():
+#     if isinstance(value, str):
+#         print(value, ":", value[::-1])
+
+#     elif isinstance(value,int):
+#         print(value,':', value+10)   
+
+#     elif isinstance(value, float):
+#         print(value)     
+
+# 6)create a new string by Removing 3rd and 5th index string 
+
+# st='python'
+# length=len(st)
+# for i in range(0,len(st),1):
+#     if (i==3 or i==5):
+#         continue
+#     print(i,st[i], end='')
+
+# 9)print duplicate element in tuple
+# tu=(1,3,2,3,4,5,6,5,6)
+# li=list(tu)
+# new_li=[]
+# for ele in li:
+#     if li.count(ele)>1:
+#         new_li.append(ele)
+# print(new_li)        
+
+# 8)display non common element from 2 set
+# set1={'java','python', 1,22,33,60}
+# set2={'python',33, 1}
+
+# for ele in set1:
+#     if ele in set2:
+#         print(ele, end=' ')
+
+# 7)find the largest number in the list
+
+# li=[1,2,3,4,5,6,7,8,9]
+# for ele in li:
+#     if ele==max(li):
+#         print(ele)

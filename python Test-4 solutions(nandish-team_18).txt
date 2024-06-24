@@ -1,0 +1,138 @@
+
+# 1)print the given input is prime number or not
+
+# number=int(input('enter no :'))
+
+# for num in range(2, number):
+#     if number%num==0:
+#         print(number, 'not a prime no')
+#         break
+#     else:
+#         print(number, 'is a prime no')
+
+
+
+# 2)l1 = ['100','200','300'] l2 = ['arun','rama','kumar'] create a dictionary out of 2 lists
+
+# l1 = ['100','200','300']
+# l2 = ['arun','rama','kumar']
+# d={}
+# for i in range(len(l1)):
+#                for j in range(len(l2)):
+#                    d[l1[i]]=l2[j]
+# print(d)
+
+# 3)l = [[1, 2, 3], [4, 5, 6], [7, 8, 9]] """ sum of entire list and sum of internal list"""
+
+# l = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+# sum_of_list=[]
+# for i in l:
+#     sum_of_list.append(sum(i))
+# print(sum_of_list)    
+# print('sum of entire list',sum(sum_of_list))
+
+# 4)d = {'1':True,'2':False,'3':True,'4':False} replace True to pass
+
+# d = {'1':True,'2':False,'3':True,'4':False}
+# for key,value in d.items():
+#     if value==True:
+#         d[key]='pass'
+        
+# print(d)
+
+# 5)duplicate word with count
+# string = 'python is a programming subject and c++ is also a programming subject'
+
+# li=string.split()
+# d={}
+# for i in range(len(li)):
+#     if li.count(li[i])>1:
+#         d[li[i]]=li.count(li[i])
+
+# print(d)
+
+# 6)print the given fibonacii series
+
+# n=int(input('Enter the number:'))
+# a=0
+# b=1
+# c=0
+# for i in range(n+1):
+#     print(a,end=',')
+#     c=a+b
+#     a=b
+#     b=c
+
+# 7)create a function to print the values of string as reverse if it is int add +10 to it other data type print as it is
+
+# def print_reverse_or_add_ten(value):
+#     if isinstance(value, str):
+#         print(value[::-1]) 
+#     elif isinstance(value, int):
+#         print(value + 10)  
+#     else:
+#         print(value) 
+
+# x=print_reverse_or_add_ten('python')
+# y=print_reverse_or_add_ten(10)
+
+
+# 8)Handle Employee CSV file print employee full names 
+# import csv
+# path=r"Desktop\100 Records.csv"
+# with open(path,'r') as f:
+#     row=csv.DictReader(f)
+#     next(row)
+#     for i in row:
+#         print(i['First Name'] +' '+ i['Middle Initial'] +' '+ i['Last Name'])
+
+# 9)Handle Employee CSV file write to other file who earns greater than 60000
+
+# import csv
+# path=r"Desktop\100 Records.csv"
+# with open(path) as f1:
+#     with open('datails1_info.csv', 'w') as f2:
+#         rows=csv.reader(f1)
+#         write_obj=csv.writer(f2)
+
+#         for row in rows:
+#             if row[2]=='Mr.':
+#                 print(row[3])
+#                 write_obj.writerows(row[3])
+
+# with open(path,'r') as f:
+#     with open('salary_info.csv', 'w') as f1:
+#         rows=csv.reader(f)
+#         next(rows)
+#         write_obj=csv.writer(f1)
+
+#     for row in rows:
+#         if int(row[26])>60000:
+#             print(row[26])
+#             write_obj.writerows([row[26]])    
+
+        # row=csv.DictReader(f)
+        # next(row)
+        # for i in row:
+        #     if int(i['Salary'])>60000:
+        #         csv_file=csv.writer(f1)
+        #         csv_write=csv.wri
+            # print(i['Salary'])
+
+
+# 10)print how many words are 
+# path=r"Desktop\bt.txt"
+# with open(path,'r') as f:
+#     count=0
+    
+#     for i in f:
+#         words = i.split() 
+#         print(words)
+#         count += len(words)      
+
+# print(count)
+
+
+
+# ==========================================================================================================

@@ -1,0 +1,103 @@
+# 1)WAP to return a string only if string starting with vowel
+==============================================================
+li = ['apple','gmail','yahoo','instagram','facebook']
+vowels=['a','e','i','o','u']
+def string(li):
+    for ele in li:
+        if li[0] in vowels:
+            return ele
+        
+        else:
+            return 'string does not start with vowels'
+res=map(string,li)
+print(list(res))
+
+
+=========================================================================
+# 2)WAP to convert all the negative number in the list to positive number
+=========================================================================
+li=[-1,2,3,-4,-5]
+
+new_li=[]
+for i in li:
+    if i<0:
+        i+=10
+        new_li.append(i)
+print(new_li)        
+        
+=================================================
+# 3)sum of odd and even number in list
+# li = [23,35,88,90,46,53] by using lambda function
+==================================================
+# li=[23,35,88,90,46,53]
+# even_li=[]
+# odd_li=[]
+# count=0
+# for ele in li:
+#     if ele%2==0:
+#         even_li.append(ele)
+#         count+=ele
+
+# print(even_li,'sum of even nos:',count)
+# sum=0
+# for i in li:        
+#     if i%2!=0:
+#         odd_li.append(i)
+#         sum+=i
+# print(odd_li,'sum of odd nos:',sum)
+
+==========using lambda function==============
+li = [23, 35, 88, 90, 46, 53]
+sum_of_odd_no = sum(filter(lambda x: x % 2 != 0, li))
+
+sum_of_even_no = sum(filter(lambda x: x % 2 == 0, li))
+
+print("Sum of odd numbers:", sum_of_odd_no)
+print("Sum of even numbers:", sum_of_even_no)
+
+===========o/p===========
+Sum of odd numbers: 111
+Sum of even numbers: 224
+
+========================================================
+# 4)# print only student names using lambda and map
+=========================================================
+students = [
+           {"name": "John Doe",
+             "father name": "Robert Doe",
+             "Address": "123 Hall street"
+             },
+            {
+              "name": "Rahul Garg",
+              "father name": "Kamal Garg",
+              "Address": "3-Upper-Street corner"
+            },
+            {
+              "name": "Angela Steven",
+             "father name": "Jabob steven",
+             "Address": "Unknown"
+            }
+]
+
+new_li=[]
+for ele in students:
+    for key, value in ele.items():
+        if key=='name':
+            new_li.append(value)
+print(new_li)
+
+=====using lambda & map function=====
+
+student_names = list(map(lambda student: student["name"], students))
+print(student_names)
+============o/p======
+['John Doe', 'Rahul Garg', 'Angela Steven']
+
+
+======================================================================================================================
+# 5)we have a list of fruits, and your task is to output only those names which have the character “g” in their name.
+=======================================================================================================================
+# fruits = ['mango', 'apple', 'orange', 'cherry', 'grapes']
+# for ele in fruits:
+#     if 'g' in ele:
+#         print(ele,end=' ')    

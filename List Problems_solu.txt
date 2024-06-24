@@ -1,0 +1,95 @@
+1)print index number and element in the list
+li=['a','b','c','d','e','f']
+for i in range(0,len(li)):
+    print("index number:", i,"element :",li[i])
+
+for i in li:
+    print(i,li.index(i))
+
+2)print even indexed element in list
+li=['a','b','c','d','e','f']
+for i in range(0,len(li),2):
+    print("index number:", i,"element :",li[i])
+
+3)print integers in a list
+li = [1,'java',2.3,'5',5,'python']
+# li = [1,'java',2.3,'5',5,'python']
+# for ele in li:
+#     if isinstance(ele,int):
+#         print(ele)
+
+li = [1,'java',2.3,'5',5,'python']
+for ele in li:
+    if type(ele) == int:
+        print(ele)
+
+
+4)print only extension in list
+li = ['gmail.com','yahoo.in','google.com']
+o/p = com in com
+li = ['gmail.com','yahoo.in','google.com']
+for ele in li:
+    print(ele.split('.')[1])
+
+5)find the largest number in the list
+	
+6)print char
+a) length char should be > 2
+b) first and last charcter should be same
+li = ['axa','amma','xyz','1221']
+op = 'axa' 'amma','1221'
+
+li = ['axa','amma','xyz','1221']
+for ele in range(0,len(li),1):
+    length=len(li[ele])
+    if(length > 2 and li[ele][0] == li[ele][-1]):
+        print(li[ele])
+
+for x in li :
+    if (len(x)>2) :
+        for y in range(0,len(x)):
+            if(x[0]==x[-1]):
+                print(x)
+                break
+
+
+7)Create a product list based on user input
+number=int(input("Enter the number of items in the list:"))
+final_list=[ ]
+for li in range(0,number,1):
+    input_str=input("Enter the element : ")
+    final_list.append(input_str)
+print("final list : ",final_list)
+
+8)remove duplicate element available in list
+li= [1, 2, 2, 3, 4, 4, 5, 5, 6]
+new_li = []
+
+for i in li:
+    if i not in new_li:
+        new_li.append(i)
+
+print(new_li)
+
+
+li=[23,54,23,65,67,54]
+for ele in li:
+    if(li.count(ele)>1):
+        li.remove(ele)
+print("Final list :",li)
+9)If list contains string reverse the string else keep as it is
+li = ['python',1,2,3,1.2,'java','123']
+for ele in li:
+    if isinstance(ele,str):
+        print(ele[::-1])
+    else:
+        print(ele)
+
+
+10)Print list in reverse order
+li = [1, "ha", 2, "ka"]
+new_li = []
+for x in range(-1, -len(li) - 1, -1):
+    new_li.append(li[x])
+
+print(new_li)
